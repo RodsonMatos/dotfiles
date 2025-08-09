@@ -1,0 +1,34 @@
+# name: 'Base16-ansi'
+# preferred_background: 0B0D10
+# based on: 'https://github.com/chriskempson/base16-default-schemes'
+
+fish_color_normal FF0096
+fish_color_autosuggestion 282B2F
+fish_color_cancel 00B7BF
+fish_color_command FF0074
+fish_color_comment 4B4E51
+fish_color_cwd CE3A91
+fish_color_cwd_root 3A7DCE
+fish_color_end 00F4FF
+fish_color_error 989B00
+fish_color_escape 0075FF
+fish_color_history_current BEC2C8
+fish_color_host CE3A7D
+fish_color_host_remote 00B7BF
+fish_color_keyword CE3A7D
+fish_color_operator FF0074
+fish_color_option CE3A91
+fish_color_param 2F8D5F
+fish_color_quote BEC2C8
+fish_color_redirection CE3A91
+fish_color_search_match white --background=0B0D10 --bold
+fish_color_selection FF0096 --background=BEC2C8 --bold
+fish_color_status CE3A7D
+fish_color_user BEC2C8
+fish_color_valid_path FF0096 --underline
+fish_pager_color_completion 4B4E51
+fish_pager_color_description B3A06D 00B7BF
+fish_pager_color_prefix normal --bold --underline
+fish_pager_color_progress brwhite --background=cyan --bold
+fish_pager_color_selected_background --background=BEC2C8
+fish_pager_color_background BEC2C8

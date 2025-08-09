@@ -1,0 +1,40 @@
+term = xterm-ghostty
+shell-integration = fish
+shell-integration-features = cursor, sudo, title
+theme = wallust
+
+clipboard-paste-protection = true
+gtk-tabs-location = bottom
+gtk-wide-tabs = false
+gtk-single-instance = false
+cursor-style = block
+confirm-close-surface = false
+gtk-adwaita = true
+
+background-opacity = 1
+background-blur = 100
+
+# Window configuration
+window-decoration = none
+window-save-state = always
+window-vsync = false
+# window-padding-y=0,0
+# window-padding-x=0,0
+window-padding-balance = false
+bold-is-bright = false
+adw-toolbar-style = flat
+window-theme = dark
+window-new-tab-position = end
+
+# Font configuration
+font-size = 14
+window-inherit-font-size = true
+font-thicken = true
+font-family = "JetBrainsMono Nerd Font"
+font-feature = +feat
+
+# Keybinds
+keybind = ctrl+shift+s=close_surface
+
+# CGroup
+linux-cgroup = always

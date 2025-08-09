@@ -1,0 +1,41 @@
+//* ---- 💫 https://github.com/JaKooLit 💫 ---- *//
+/* Waybar Modules Extras */
+
+/* This is where you can add Extra Modules you wish. copy.sh will try to restore*/
+/* this file along with the unique configs and styles. */
+/* IMPORTANT, be mindful with , or ". else waybar will not start */
+
+{
+  "include": [
+    "$HOME/.config/waybar/Modules",
+  ],
+  "custom/user_tray": {
+      "format": " 󱊖 ",
+      "tooltip": true,
+      "tooltip-format": "Tray Icon",
+    },
+
+  "group/user_tray": {
+      "orientation": "inherit",
+      "drawer": {
+        "transition-duration": 300,
+        "children-class": "custom/user_tray",
+        "transition-left-to-right": false,
+        "click-to-reveal": true,
+      },
+      "modules": [
+        "custom/user_tray",
+        "tray",
+      ],
+    },
+    "custom/mullvadvpn": {
+       "interval": 5,
+       "format": "{}",
+       "exec": "mullvad status -j | jq -r '.details.location.hostname' | rg -qF wg && echo 🔒 $(mullvad status -j | jq -r '.details.location.hostname') || echo 🔓 VPN Off", // shows the relay if connected
+       "max-length": "100",
+       "on-click": "mullvad connect",
+       "on-click-right": "mullvad disconnect",
+       "on-click-middle": "mullvad-vpn",
+       "tooltip-format": "Left click: connect\nRight click: disconnect\nMiddle click: open gui",
+    },
+}

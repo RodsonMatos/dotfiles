@@ -1,0 +1,245 @@
+;; My mouse was a bit slower
+(defcfg
+  linux-device-detect-mode keyboard-only
+  linux-dev-names-include (
+    "BY Tech Gaming Keyboard"
+    "BY Tech Gaming Keyboard System Control"
+    "BY Tech Gaming Keyboard Consumer Control"
+    "BY Tech Gaming Keyboard Mouse"
+  )
+  process-unmapped-keys yes
+  rapid-event-delay 0
+  linux-continue-if-no-devs-found no
+)
+
+
+(defsrc
+  esc  F1   F2   F3   F4   F5   F6   F7   F8   F9  F10  F11  F12
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft \    z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt               spc            ralt comp rctl
+)
+
+;; variables
+(defvar
+  tap-time 200
+  hold-time 200
+)
+
+
+;; Skip home row mods while typing
+(deftemplate charmod (char mod)
+  (switch 
+    ((key-timing 3 less-than 250)) $char break
+    () (tap-hold-release 200 300 $char $mod) break
+  )
+)
+
+
+;; homerow mods to use with nerps
+(defalias
+  el esc
+
+  ;; left hand
+  nn  (t! charmod n lsft)
+  nr  (t! charmod r lalt)
+  nt  (t! charmod t lctl)
+  ns  (t! charmod s lmet)
+  nm  (t! charmod m ralt)
+  ;; right hand
+  ne  (t! charmod e lmet)
+  na  (t! charmod a rctl)
+  ni  (t! charmod i lalt)
+  nh  (t! charmod h rsft)
+  nf  (t! charmod f ralt)
+)
+
+
+(defalias
+  r_alt (tap-hold-press $tap-time $hold-time ret (layer-while-held symbol_layer))
+  l_alt (tap-hold-press $tap-time $hold-time bspc lsft)
+)
+
+
+(defchords func_layer 1
+  (lalt ) @l_alt
+  ( ralt) @r_alt
+)
+
+
+(defalias
+  cla (chord func_layer lalt)
+  cra (chord func_layer ralt)
+)
+
+
+(defalias
+  comp (layer-while-held changer)
+  1l (layer-switch mine_qwerty)
+  2l (layer-switch qwerty)
+  n (layer-switch base)
+  alt (multi F3 (layer-while-held minecraft))
+  nl_alt (layer-switch num_layer)
+  spcn (tap-hold-press $tap-time $hold-time spc (layer-while-held navigation))
+)
+
+
+(deflayer base
+  grv   _   _   _    _    _    _    _    _    _    _    _    _
+  _     _   _   _    _    _    _    _    _    _    _    [    _    _
+  tab   x   l   d    p    v    z    o    u    k    ;    q    ]
+  @el   @nn @nr @nt  @ns  g    y    @ne  @na  @ni  @nh  -    _
+  _     \   /   j    @nm  c    w    b    @nf  '    ,    .    _
+  _     lalt   @cla          @spcn           @cra  @comp     _
+)
+
+(deflayer mine_qwerty
+  _    _   _   _    _    _    _    _    _    _    _    _    _
+  _    _   _   _    _    _    _    _    _    _    _    _    _    _
+  _    _   _   _    _    _    _    _    _    _    _    _    _
+  _    _   _   _    _    _    _    _    _    _    _    _    _
+  _    _   _   _    _    _    _    _    _    _    _    _    _
+  _    _      @alt            _              _    @comp     _
+)
+
+
+(deflayer qwerty
+  _    _   _   _    _    _    _    _    _    _    _    _    _
+  _    _   _   _    _    _    _    _    _    _    _    _    _    _
+  _    _   _   _    _    _    _    _    _    _    _    _    _
+  _    _   _   _    _    _    _    _    _    _    _    _    _
+  _    _   _   _    _    _    _    _    _    _    _    _    _
+  _    _       _              _              _    @comp    _
+)
+
+(deflayermap minecraft
+  1 lsft
+  2 f
+  3 esc
+)
+
+(deflayer changer
+  _    _   _   _    _    _    _    _    _    _    _    _    _
+  _    @1l @2l _    _    _    _    _    _    _    _    _    _    _
+  _    _   _   _    _    _    _    _    _    _    _    _    _
+  _    _   _   _    _    _    _    _    _    _    _    _    _
+  _    _   _   _    _    _    _    @n   _    _    _    _    _
+  _    _       _              _              _    @comp    _
+)
+
+
+
+(deflayer navigation
+  XX  XX  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX M-1  M-2  M-3  M-4  M-5  M-6  M-7  M-8  M-9  M-0 lrld XX XX
+  XX @pad @cls bck  fwd  XX        XX home pgdn pgup end  XX   XX
+  XX @all @sav S-tab tab XX        XX lft  down up   rght @fun XX
+  XX @ndo @cut @cpy @pst XX    _   XX @mwl @mwd @mwu @mwr XX
+    _ _     del             _             esc   _ _
+)
+
+;; NumPad
+(deflayer numpad
+  XX  XX  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   _    _    _    _    _     _   _    _    _    _    _  XX XX
+  XX   home up   end  pgup XX       XX @/   @7   @8   @9   XX      XX
+  XX   lft  down rght pgdn XX       XX @-   @4   @5   @6   @0      XX
+  XX   XX   XX   XX   XX   XX   _   XX @,   @1   @2   @3   @.
+  _ _       @std           @nbs           @std _ _
+)
+
+;; function keys
+(deflayer funpad
+  XX  XX  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX XX XX
+  XX f1   f2   f3   f4   XX        XX   XX   XX   XX   XX XX XX
+  XX f5   f6   f7   f8   XX        XX   XX lctl lalt lmet _  XX
+  XX f9   f10  f11  f12  XX   XX   XX   XX   XX   XX   XX XX
+  _ _         _               _             _ _ _
+)
+
+(defalias
+  all C-a
+  sav C-s
+  cls C-w
+  ndo C-z
+  cut C-x
+  cpy C-c
+  pst C-v
+
+  std (layer-switch base)
+  pad (layer-switch numpad)
+
+  fun (layer-while-held funpad)
+
+  ;; Mouse wheel emulation
+  mwu (mwheel-up    50 120)
+  mwd (mwheel-down  50 120)
+  mwl (mwheel-left  50 120)
+  mwr (mwheel-right 50 120)
+
+  0 0
+  1 1
+  2 2
+  3 3
+  4 4
+  5 5
+  6 6
+  7 7
+  8 8
+  9 9
+  , ,
+  . .
+)
+
+
+
+;; Symbols
+(defalias
+  ex S-1
+  at S-2
+  hs S-3
+  dl S-4
+  pr S-5
+  un S--
+  am S-7
+  as S-8
+  co S-/
+
+  gr grv
+  lp S-9
+  rp S-0
+  bl (macro ])
+  bq Backquote
+  bq2 S-Backquote
+  cl (macro S-])
+  cr (macro S-\)
+  eq =
+  sl (unicode "/")
+  til (unicode "~")
+  vb (unicode |)
+  / /
+  - -
+  nbs spc
+)
+
+(deflayer symbol_layer
+  _    _   _   _    _    _    _    _    _    _    _    _    _
+  _  mute vold volu  _   _    _    _    _    _    _    _    _    _
+  _ S-Quote  S-, S-. @dl  @pr   @at  @am   @as  @bq  S-[    _    _
+  _   @cl    @lp @rp @cr  @eq  Backslash    +  @rp  @sl  @bq2    _    _
+  _   @til   @bl \  @un @co  @hs    @vb   @ex   @co  w          _ _
+  _    _       @nl_alt              _              _    _    _
+)
+
+(deflayer num_layer
+  _    _   _   _    _    _    _    _    _    _    _    _    _
+  _    _   _   _    _    _    _    _    _    _    _    _    _    _
+  _  @ex  @at  @hs @dl @pr   S-Quote   @am  @as  @lp  @rp   _    _
+  _    1   2   3    4    5    6    7    8    9    0    _    _
+  _    _   _   _    _    _    _    _    _    _    _    _    _
+  _    _     @std              _            @std    _    _
+)
+

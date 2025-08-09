@@ -1,0 +1,62 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+
+// ### DEFAULT v4 (Laptop)  - Top ### //
+{
+  "include": [
+    "$HOME/.config/waybar/Modules",
+    "$HOME/.config/waybar/ModulesWorkspaces",
+    "$HOME/.config/waybar/ModulesCustom",
+    "$HOME/.config/waybar/ModulesGroups",
+    "$HOME/.config/waybar/UserModules",
+    ],
+  "layer": "top",
+  "mode": "dock",
+  "exclusive": true,
+  "passthrough": false,
+  "position": "top",
+  "spacing": 2,
+  "fixed-center": true,
+  "ipc": true,
+  "margin-top": 0,
+  "margin-left": 4,
+  "margin-right": 4,
+  "margin-bottom": 0,
+  //"no-center": true,
+
+  "modules-left": [
+    // "group/app_drawer",
+    // "custom/separator#dot-line",
+    // "group/mobo_drawer",
+    // "custom/separator#line",
+    "hyprland/workspaces#numbers",
+    "hyprland/submap",
+    "custom/arrow10",
+    "hyprland/window",
+  ],
+
+  "modules-center": [
+    // "custom/cava_mviz",
+    // "custom/separator#dot-line",
+    // "custom/separator#line",
+    // "hyprland/workspaces#roman",
+    // "custom/separator#dot-line",
+    // "custom/hypridle",
+    // "hyprland/submap",
+    "clock#3",
+    ],
+
+  "modules-right": [
+    "group/user_tray",
+    "custom/weather",
+    "custom/separator#dot-line",
+    // "group/laptop",
+    /* "mpris", */
+    // "custom/separator#dot-line",
+    // "custom/power",
+    "network",
+    "custom/separator#dot-line",
+    "custom/mullvadvpn",
+    "custom/separator#dot-line",
+    "custom/swaync",
+  ]
+}

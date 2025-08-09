@@ -1,0 +1,2 @@
+default-scheme = "base16-tinty-generated"
+shell = "fish -c '{}'"
