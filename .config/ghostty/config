@@ -1,4 +1,4 @@
-term = xterm-ghostty
+term = xterm-256color
 shell-integration = fish
 shell-integration-features = cursor, sudo, title
 theme = wallust

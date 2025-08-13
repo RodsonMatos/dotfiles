@@ -1,3 +1,3 @@
-function e --wraps eza --description eza
+function e --wrap eza --description eza
     exa -la $argv
 end

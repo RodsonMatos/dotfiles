@@ -1,12 +1,10 @@
-# if status is-interactive
-#     # eval (zellij setup --generate-auto-start fish | string collect)
-# end
-
-# if not set -q TMUX
-#     set -g TMUX tmux new-session -d -s base
-#     eval $TMUX
-#     tmux attach-session -d -t base
-# end
+if status is-interactive
+    if not set -q TMUX
+        set -g TMUX tmux new-session -d -s base
+        eval $TMUX
+        tmux attach-session -d -t base
+    end
+end
 
 # alias n="nvim"
 # alias ls="exa -l --color=always"
