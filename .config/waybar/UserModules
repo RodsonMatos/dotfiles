@@ -29,7 +29,7 @@
       ],
     },
     "custom/mullvadvpn": {
-       "interval": 5,
+       "interval": 1,
        "format": "{}",
        "exec": "mullvad status -j | jq -r '.details.location.hostname' | rg -qF wg && echo 🔒 $(mullvad status -j | jq -r '.details.location.hostname') || echo 🔓 VPN Off", // shows the relay if connected
        "max-length": "100",

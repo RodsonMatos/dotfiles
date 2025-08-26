@@ -27,7 +27,7 @@ window-theme = dark
 window-new-tab-position = end
 
 # Font configuration
-font-size = 14
+font-size = 16
 window-inherit-font-size = true
 font-thicken = true
 font-family = "JetBrainsMono Nerd Font"
