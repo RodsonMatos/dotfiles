@@ -1,0 +1,46 @@
+theme = "base16_terminal"
+
+[editor]
+line-number = "relative"
+scrolloff = 3
+completion-timeout = 5
+completion-replace = true
+completion-trigger-len = 1
+bufferline = "multiple"
+# rulers = [100]
+true-color = true
+end-of-line-diagnostics = "hint"
+
+[editor.auto-save]
+focus-lost = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.lsp]
+# Disable automatically popups of signature parameter help
+auto-signature-help = false
+# Show LSP messages in the status line
+display-messages = true
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["version-control", "diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.inline-diagnostics]
+cursor-line = "warning" # show warnings and errors on the cursorline inline
+other-lines = "disable" # Don't expand diagnostics unless the cursor is on the line
+
+[editor.indent-guides]
+render = true
+skip-levels = 1
+
+[keys.normal]
+C-s = ":w"
