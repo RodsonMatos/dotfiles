@@ -1,13 +1,13 @@
-theme = "base16_terminal"
+theme = "base16_transparent"
 
 [editor]
+popup-border = "all"
 line-number = "relative"
 scrolloff = 3
 completion-timeout = 5
 completion-replace = true
 completion-trigger-len = 1
 bufferline = "multiple"
-# rulers = [100]
 true-color = true
 end-of-line-diagnostics = "hint"
 
@@ -24,12 +24,21 @@ select = "underline"
 auto-signature-help = false
 # Show LSP messages in the status line
 display-messages = true
+display-progress-messages = true
 
 [editor.statusline]
-left = ["mode", "spinner"]
+left = ["mode", "spinner", "read-only-indicator", "file-modification-indicator"]
 center = ["file-name"]
-right = ["version-control", "diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
-separator = "│"
+right = [
+  "version-control",
+  "diagnostics",
+  "selections",
+  "position",
+  "file-encoding",
+  "file-line-ending",
+  "file-type",
+]
+separator = ">>"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
