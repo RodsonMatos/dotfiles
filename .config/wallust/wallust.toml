@@ -88,3 +88,6 @@ fish.target = '~/.config/fish/themes/color-fish.fish'
 
 kde.template = 'colors-kdeglobals'
 kde.target = '~/.config/kdeglobals'
+
+walker.template = 'colors-walker.css'
+walker.target = '~/.config/walker/themes/wallust.css'
