@@ -91,5 +91,5 @@ main
 
 sleep 0.5
 ${SCRIPTSDIR}/WallustSwww.sh
-sleep 0.2
+sleep 0.5
 ${SCRIPTSDIR}/Refresh.sh
