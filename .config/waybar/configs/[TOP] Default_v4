@@ -21,23 +21,12 @@
   "margin-right": 0,
   "margin-bottom": 0,
   "modules-left": [
-    // "group/app_drawer",
-    // "custom/separator#dot-line",
-    // "group/mobo_drawer",
-    // "custom/separator#line",
     "hyprland/workspaces#number",
     "hyprland/submap",
     "custom/arrow10",
     "hyprland/window"
   ],
   "modules-center": [
-    // "custom/cava_mviz",
-    // "custom/separator#dot-line",
-    // "custom/separator#line",
-    // "hyprland/workspaces#roman",
-    // "custom/separator#dot-line",
-    // "custom/hypridle",
-    // "hyprland/submap",
     "clock#3"
   ],
   "modules-right": [
