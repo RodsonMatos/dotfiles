@@ -18,8 +18,8 @@ end
 abbr --add dotdot --regex '^\.\.+$' --function multicd
 
 starship init fish | source
-export EDITOR="/usr/bin/nvim"
-export VISUAL="/usr/bin/nvim"
+export EDITOR="/usr/local/bin/hx"
+export VISUAL="/usr/local/bin/hx"
 export BW_SESSION="SheIVvLF4FkUt+CC9fVbB3UZlysDp10PTXM8cDhSzLbhsw5XNGMoRcQLLjWSsbBVeoz3tYqIJo3mGGGtqSS7Ug=="
 
 source ~/.config/fish/themes/color-fish.fish
