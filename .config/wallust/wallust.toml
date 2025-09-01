@@ -3,7 +3,7 @@
 
 # How the image is parse, in order to get the colors:
 # full - resized - wal - thumb -  fastresize - kmeans
-backend = "wal"
+backend = "kmeans"
 
 # What color space to use to produce and select the most prominent colors:
 # lab - labmixed - lch - lchmixed - lchansi
@@ -45,6 +45,8 @@ check_contrast = true
 threshold = 10
 
 fallback_generator = "complementary"
+
+saturation = 40
 
 [templates]
 cava.template = 'colors-cava'
