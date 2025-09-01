@@ -35,6 +35,10 @@ command = "taplo"
 args = ["format %{buffer_name}"]
 
 
+[language-server.yaml-language-server]
+command = "yaml-language-server"
+
+
 [[language]]
 name = "rust"
 auto-format = true
@@ -74,3 +78,8 @@ language-servers = ["vscode-json-language-server"]
 name = "css"
 auto-format = true
 language-servers = ["vscode-css-language-server"]
+
+[[language]]
+name = "yaml"
+auto-format = true
+language-servers = ["yaml-language-server"]

@@ -17,6 +17,12 @@
 	"tooltip": true,
 },
 
+"custom/weather#2": {
+	"exec": "~/.cargo/bin/waybar-weather",
+	"return-type": "json",
+	"interval": 600,
+},
+
 "custom/file_manager": {
 	"format": " ",
 	"on-click": "$HOME/.config/hypr/scripts/WaybarScripts.sh --files",

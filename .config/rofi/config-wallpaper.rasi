@@ -28,11 +28,11 @@ entry {
 
 /* ---- Listview ---- */
 listview {
-  columns: 6;
+  columns: 2;
   lines: 2;
   spacing: 20px;
   padding: 10px;
-  columns: 6;
+  columns: 2;
   lines: 2;
   flow: horizontal;
   fixed-width: true;
@@ -56,7 +56,7 @@ element selected.normal {
 
 element-icon {
     text-color:                  inherit;
-    size:                        10%;
+    size:                        20%;
     margin:                      -30px;
     cursor:                      inherit;
 }

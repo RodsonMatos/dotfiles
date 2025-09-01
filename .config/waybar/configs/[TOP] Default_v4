@@ -31,7 +31,7 @@
   ],
   "modules-right": [
     "group/user_tray",
-    "custom/weather",
+    "custom/weather#2",
     "custom/separator#dot-line",
     "network",
     "custom/separator#dot-line",
