@@ -5,6 +5,9 @@ command = "vscode-json-language-server"
 [language-server.gopls]
 command = "gopls"
 
+[language-server.gopls.config]
+gofumpt = true
+
 
 [language-server.vscode-css-language-server]
 command = "vscode-css-language-server"
@@ -48,9 +51,7 @@ language-servers = ["rust-analyzer"]
 
 [[language]]
 name = "toml"
-# https://github.com/tamasfe/taplo/issues/580#issuecomment-2004174721
-roots = ["."]
-language-servers = ["taplo"]
+formatter = { command = "taplo", args = ["format", "-"] }
 auto-format = true
 
 
@@ -62,8 +63,6 @@ auto-format = true
 
 [[language]]
 name = "go"
-roots = ["go.mod"]
-formatter = { command = "gofmt" }
 auto-format = true
 language-servers = ["gopls"]
 
@@ -75,11 +74,30 @@ language-servers = ["vscode-json-language-server"]
 
 
 [[language]]
-name = "css"
+name = "html"
+formatter = { command = 'prettier', args = ["--parser", "html"] }
 auto-format = true
-language-servers = ["vscode-css-language-server"]
+
+
+[[language]]
+name = "css"
+formatter = { command = 'prettier', args = ["--parser", "css"] }
+auto-format = true
+
+
+[[language]]
+name = "scss"
+formatter = { command = 'prettier', args = ["--parser", "scss"] }
+auto-format = true
+
 
 [[language]]
 name = "yaml"
 auto-format = true
 language-servers = ["yaml-language-server"]
+
+
+# [[language]]
+# name = "markdown"
+# language-servers = ["marksman"]
+# auto-format = true

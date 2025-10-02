@@ -1,72 +1,32 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR EDITOR:neovim
-SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dcolor\x3dbg\x2b\x3a\x23313244\x2cbg\x3a\x231e1e2e\x2cspinner\x3a\x23f5e0dc\x2chl\x3a\x23f38ba8\x20\x2d\x2dcolor\x3dfg\x3a\x23cdd6f4\x2cheader\x3a\x23f38ba8\x2cinfo\x3a\x23cba6f7\x2cpointer\x3a\x23f5e0dc\x20\x2d\x2dcolor\x3dmarker\x3a\x23f5e0dc\x2cfg\x2b\x3a\x23cdd6f4\x2cprompt\x3a\x23cba6f7\x2chl\x2b\x3a\x23f38ba8
-SETUVAR VISUAL:neovim
 SETUVAR __fish_initialized:3800
-SETUVAR _fisher_budimanjojo_2F_tmux_2E_fish_files:\x7e/\x2econfig/fish/conf\x2ed/tmux\x2eextra\x2econf\x1e\x7e/\x2econfig/fish/conf\x2ed/tmux\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/tmux\x2eonly\x2econf
-SETUVAR _fisher_franciscolourenco_2F_done_files:\x7e/\x2econfig/fish/conf\x2ed/done\x2efish
-SETUVAR _fisher_jorgebucaran_2F_autopair_2E_fish_files:\x7e/\x2econfig/fish/functions/_autopair_backspace\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_left\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_right\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_same\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_tab\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/autopair\x2efish
-SETUVAR _fisher_patrickf1_2F_fzf_2E_fish_files:\x7e/\x2econfig/fish/functions/_fzf_configure_bindings_help\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_extract_var_info\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_changed_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_diff_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_file_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_directory\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_log\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_status\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_history\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_processes\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_variables\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_wrapper\x2efish\x1e\x7e/\x2econfig/fish/functions/fzf_configure_bindings\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fzf\x2efish\x1e\x7e/\x2econfig/fish/completions/fzf_configure_bindings\x2efish
-SETUVAR _fisher_plugins:patrickf1/fzf\x2efish\x1efranciscolourenco/done\x1ebudimanjojo/tmux\x2efish\x1ejorgebucaran/autopair\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR --export color00:2D363F
-SETUVAR --export color01:524C46
-SETUVAR --export color02:90736C
-SETUVAR --export color03:64838B
-SETUVAR --export color04:6681BC
-SETUVAR --export color05:5A8F92
-SETUVAR --export color06:B69856
-SETUVAR --export color07:B3D7D9
-SETUVAR --export color08:50575F
-SETUVAR --export color09:59524B
-SETUVAR --export color10:A4786F
-SETUVAR --export color11:578A95
-SETUVAR --export color12:729AF2
-SETUVAR --export color13:78BFC3
-SETUVAR --export color14:F2CA72
-SETUVAR --export color15:B3D7D9
-SETUVAR --export color_background:0F151C
-SETUVAR --export color_foreground:B3D7D9
-SETUVAR --export fish_color_autosuggestion:963363
-SETUVAR --export fish_color_cancel:963363
-SETUVAR --export fish_color_command:393F85
-SETUVAR --export fish_color_comment:646575
-SETUVAR --export fish_color_cwd:7A3064
-SETUVAR --export fish_color_cwd_root:333872
-SETUVAR --export fish_color_end:B53874
-SETUVAR --export fish_color_error:333872
-SETUVAR --export fish_color_escape:393F85
-SETUVAR fish_color_gray:6c7086
-SETUVAR --export fish_color_history_current:8F91A7
-SETUVAR --export fish_color_host:333872
-SETUVAR --export fish_color_host_remote:963363
-SETUVAR --export fish_color_keyword:333872
-SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
-SETUVAR --export fish_color_normal:8F3574
-SETUVAR --export fish_color_operator:393F84
-SETUVAR --export fish_color_option:7A3064
-SETUVAR --export fish_color_param:333872
-SETUVAR --export fish_color_quote:8F91A7
-SETUVAR --export fish_color_redirection:7A3064
-SETUVAR --export fish_color_search_match:white\x1e\x2d\x2dbackground\x3d0E0F1D\x1e\x2d\x2dbold
-SETUVAR --export fish_color_selection:8F3574\x1e\x2d\x2dbackground\x3d8F91A7\x1e\x2d\x2dbold
-SETUVAR --export fish_color_status:333872
-SETUVAR --export fish_color_user:926F90
-SETUVAR --export fish_color_valid_path:8F3574\x1e\x2d\x2dunderline
+SETUVAR fish_color_autosuggestion:2F5FA8
+SETUVAR fish_color_cancel:BF373F
+SETUVAR fish_color_command:FF0588
+SETUVAR fish_color_comment:D6E4E7
+SETUVAR fish_color_cwd:CA2868
+SETUVAR fish_color_cwd_root:2588AD
+SETUVAR fish_color_end:56C1E1
+SETUVAR fish_color_error:FA1871
+SETUVAR fish_color_escape:31B5E6
+SETUVAR fish_color_history_current:D6E4E7
+SETUVAR fish_color_host:CD1D79
+SETUVAR fish_color_host_remote:4092A9
+SETUVAR fish_color_normal:306FCD
+SETUVAR fish_color_operator:FF0588
+SETUVAR fish_color_param:CA2868
+SETUVAR fish_color_quote:D6E4E7
+SETUVAR fish_color_redirection:BF373F
+SETUVAR fish_color_search_match:white\x1e\x2d\x2dbackground\x3d110C18\x1e\x2d\x2dbold
+SETUVAR fish_color_selection:FF4A54\x1e\x2d\x2dbackground\x3dD6E4E7\x1e\x2d\x2dbold
+SETUVAR fish_color_status:CD1D79
+SETUVAR fish_color_user:F193BC
+SETUVAR fish_color_valid_path:FF4A54\x1e\x2d\x2dunderline
 SETUVAR fish_key_bindings:fish_vi_key_bindings
-SETUVAR --export fish_pager_color_background:B7B8C8
-SETUVAR --export fish_pager_color_completion:646575
-SETUVAR --export fish_pager_color_description:B3A06D\x1e963363
-SETUVAR --export fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
-SETUVAR --export fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan\x1e\x2d\x2dbold
-SETUVAR fish_pager_color_secondary_background:\x1d
-SETUVAR fish_pager_color_secondary_completion:\x1d
-SETUVAR fish_pager_color_secondary_description:\x1d
-SETUVAR fish_pager_color_secondary_prefix:\x1d
-SETUVAR --export fish_pager_color_selected_background:\x2d\x2dbackground\x3d8F91A7
-SETUVAR fish_pager_color_selected_completion:\x1d
-SETUVAR fish_pager_color_selected_description:\x1d
-SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/usr/local/bin\x1e/home/rotto\x2dsotam/bin\x1e/home/rotto\x2dsotam/\x2ecargo/bin
-SETUVAR --export set:color00\x1e00/00/00
+SETUVAR fish_pager_color_completion:969FA2
+SETUVAR fish_pager_color_description:B3A06D\x1e4092A9
+SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
+SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan\x1e\x2d\x2dbold
+SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3dD6E4E7

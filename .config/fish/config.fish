@@ -1,9 +1,4 @@
 if status is-interactive
-    if not set -q TMUX
-        set -g TMUX tmux new-session -d -s base
-        eval $TMUX
-        tmux attach-session -d -t base
-    end
 end
 
 # alias n="nvim"
@@ -20,7 +15,6 @@ abbr --add dotdot --regex '^\.\.+$' --function multicd
 starship init fish | source
 export EDITOR="/usr/bin/helix"
 export VISUAL="/usr/bin/helix"
-export BW_SESSION="SheIVvLF4FkUt+CC9fVbB3UZlysDp10PTXM8cDhSzLbhsw5XNGMoRcQLLjWSsbBVeoz3tYqIJo3mGGGtqSS7Ug=="
 
 source ~/.config/fish/themes/color-fish.fish
 

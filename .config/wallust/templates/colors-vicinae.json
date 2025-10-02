@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "appearance": "dark",
+  "icon": "./unixporn.webp",
+  "name": "Wallust Theme",
+  "description": "Wallust dynamically generated colors from the wallpaper",
+  "palette": {
+    "background": "{{background}}",
+    "foreground": "{{foreground}}",
+    "blue": "{{color0}}",
+    "green": "{{color1}}",
+    "magenta": "{{color2}}",
+    "orange": "{{color3}}",
+    "purple": "{{color4}}",
+    "red": "{{color5}}",
+    "yellow": "{{color6}}",
+    "cyan": "{{color7}}"
+  }
+}

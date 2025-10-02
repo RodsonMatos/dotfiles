@@ -23,7 +23,7 @@ if [ -f "$cache_file" ]; then
     wallpaper_path=$(grep -v 'Lanczos3' "$cache_file" | head -n 1)
     echo $wallpaper_path
     # symlink the wallpaper to the location Rofi can access
-    if ln -sf "$wallpaper_path" "$HOME/.config/rofi/.current_wallpaper"; then
+    if ln -sfn "$wallpaper_path" "$HOME/.config/rofi/.current_wallpaper"; then
         ln_success=true  # Set the flag to true upon successful execution
     fi
     # copy the wallpaper for wallpaper effects

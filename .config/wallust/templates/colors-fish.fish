@@ -1,16 +1,15 @@
-# name: 'Base16-ansi'
 # preferred_background: {{ background | strip }}
 # based on: 'https://github.com/chriskempson/base16-default-schemes'
 
-set fish_color_normal {{ color13 | strip }}
-set fish_color_autosuggestion {{ color6| strip }}
-set fish_color_cancel {{ color6 | strip }}
-set fish_color_command {{ color12 | strip }}
-set fish_color_comment {{ color8 | strip }}
-set fish_color_cwd {{ color5 | strip }}
+set fish_color_normal {{ color11 | strip }}
+set fish_color_autosuggestion {{ color3 | strip }}
+set fish_color_cancel {{ color5 | strip }}
+set fish_color_command {{ color9 | strip }}
+set fish_color_comment {{ color15 | strip }}
+set fish_color_cwd {{ color2 | strip }}
 set fish_color_cwd_root {{ color4 | strip }}
 set fish_color_end {{ color14 | strip }}
-set fish_color_error {{ color3 | strip }}
+set fish_color_error {{ color10 | strip }}
 set fish_color_escape {{ color12 | strip }}
 set fish_color_history_current {{ color7 | strip }}
 set fish_color_host {{ color1 | strip }}

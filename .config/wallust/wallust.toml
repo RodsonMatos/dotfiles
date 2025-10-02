@@ -3,11 +3,11 @@
 
 # How the image is parse, in order to get the colors:
 # full - resized - wal - thumb -  fastresize - kmeans
-backend = "kmeans"
+backend = "full"
 
 # What color space to use to produce and select the most prominent colors:
 # lab - labmixed - lch - lchmixed - lchansi
-color_space = "lchmixed"
+color_space = "labmixed"
 
 # Dark	             8 dark colors, dark background and light contrast
 # Dark16	           Same as dark but uses the 16 colors trick
@@ -32,7 +32,7 @@ color_space = "lchmixed"
 # SoftLightComp	     softlight with complementary colors
 # SoftLightComp16	   softlight with complementary colors with 16 colors
 
-palette = "harddark16"
+palette = "dark16"
 
 check_contrast = true
 
@@ -46,7 +46,7 @@ threshold = 10
 
 fallback_generator = "complementary"
 
-saturation = 40
+saturation = 55
 
 [templates]
 cava.template = 'colors-cava'
@@ -91,5 +91,5 @@ fish.target = '~/.config/fish/themes/color-fish.fish'
 kde.template = 'colors-kdeglobals'
 kde.target = '~/.config/kdeglobals'
 
-walker.template = 'colors-walker.css'
-walker.target = '~/.config/walker/themes/wallust.css'
+vicinae.template = 'colors-vicinae.json'
+vicinae.target = '~/.config/vicinae/themes/wallust.json'

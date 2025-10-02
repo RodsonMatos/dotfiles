@@ -1,40 +1,45 @@
-term = xterm-256color
+term = xterm-ghostty
 shell-integration = fish
-shell-integration-features = cursor, sudo, title
+shell-integration-features = cursor, sudo, title, ssh-env, ssh-terminfo
 theme = wallust
 
+# Cursor
+cursor-style = block
+
+# System
+confirm-close-surface = false
 clipboard-paste-protection = true
+
+# GTK
 gtk-tabs-location = bottom
 gtk-wide-tabs = false
-gtk-single-instance = false
-cursor-style = block
-confirm-close-surface = false
-gtk-adwaita = true
-
-background-opacity = 1
-background-blur = 100
+gtk-single-instance = detect
+quit-after-last-window-closed = false
+gtk-quick-terminal-layer = overlay
+adw-toolbar-style = flat
 
 # Window configuration
 window-decoration = none
 window-save-state = always
 window-vsync = false
-# window-padding-y=0,0
-# window-padding-x=0,0
 window-padding-balance = false
-bold-is-bright = false
-adw-toolbar-style = flat
 window-theme = dark
 window-new-tab-position = end
 
 # Font configuration
-font-size = 16
+font-size = 13
 window-inherit-font-size = true
 font-thicken = true
 font-family = "JetBrainsMono Nerd Font"
 font-feature = +feat
+bold-color = bright
 
 # Keybinds
 keybind = ctrl+shift+s=close_surface
+keybind = global:cmd+backquote=toggle_quick_terminal
 
 # CGroup
 linux-cgroup = always
+
+# Bell
+bell-features = system
