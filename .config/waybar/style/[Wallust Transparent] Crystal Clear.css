@@ -1,12 +1,12 @@
-@import '../../.config/waybar/wallust/colors-waybar.css';
+@import "../../.config/waybar/wallust/colors-waybar.css";
 
 @define-color critical #ff0000;
 /* critical color */
 @define-color warning #f3f809;
 /* warning color */
-@define-color text @color12;
+@define-color text @color1;
 /* text color */
-@define-color text-alt @color13;
+@define-color text-alt @color4;
 /* text alternative color */
 @define-color bg @color7;
 /* background color */
@@ -16,12 +16,12 @@
   font-weight: bold;
   min-height: 0;
   /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
-  font-size: 100%;
+  font-size: 97%;
   font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
 }
 
 window#waybar {
-  background: @background;
+  background: alpha(@background, 0.7);
   border-radius: 1px;
   color: @text;
 }
@@ -31,26 +31,29 @@ window#waybar.hidden {
 }
 
 window#waybar.empty {
-  background-color: @background;
+  background-color: alpha(@background, 0.7);
 }
 
 window#waybar.empty #window {
   padding: 0px;
   border: 0px;
-  background-color: @background;
+  background-color: alpha(@background, 0.7);
 }
 
 /*-----module groups----*/
-.modules-right {}
+.modules-right {
+}
 
-.modules-center {}
+.modules-center {
+}
 
-.modules-left {}
+.modules-left {
+}
 
 tooltip {
   color: @color12;
   background: @color10;
-  opacity: 0.8;
+  opacity: 0.7;
   border-radius: 10px;
   border-width: 1px;
   border-style: solid;
@@ -65,8 +68,8 @@ tooltip {
   border-radius: 9px;
   padding-left: 4px;
   padding-right: 4px;
-  animation: gradient_f 20s ease-in infinite;
-  transition: all 0.5s cubic-bezier(.55, -0.68, .48, 1.682);
+  /* animation: gradient_f 20s ease-in infinite; */
+  /* transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682); */
 }
 
 #taskbar button.active,
@@ -75,8 +78,8 @@ tooltip {
   border-radius: 15px 15px 15px 15px;
   padding-left: 8px;
   padding-right: 8px;
-  animation: gradient_f 20s ease-in infinite;
-  transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
+  /* animation: gradient_f 20s ease-in infinite; */
+  /* transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682); */
 }
 
 #workspaces button.focused {
@@ -94,8 +97,8 @@ tooltip {
   border-radius: 15px;
   padding-left: 2px;
   padding-right: 2px;
-  animation: gradient_f 20s ease-in infinite;
-  transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
+  /* animation: gradient_f 20s ease-in infinite; */
+  /* transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682); */
 }
 
 #backlight,
@@ -169,13 +172,13 @@ tooltip {
 /*-----Indicators----*/
 #custom-hypridle.notactive,
 #idle_inhibitor.activated {
-  color: #39FF14;
+  color: #39ff14;
 }
 
 #battery.critical:not(.charging) {
   color: @critical;
   animation-name: blink;
-  animation-duration: 3.0s;
+  animation-duration: 3s;
   animation-timing-function: steps(12);
   animation-iteration-count: infinite;
   animation-direction: alternate;

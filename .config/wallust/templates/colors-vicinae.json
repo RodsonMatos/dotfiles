@@ -7,13 +7,13 @@
   "palette": {
     "background": "{{background}}",
     "foreground": "{{foreground}}",
-    "blue": "{{color0}}",
-    "green": "{{color1}}",
-    "magenta": "{{color2}}",
-    "orange": "{{color3}}",
-    "purple": "{{color4}}",
-    "red": "{{color5}}",
-    "yellow": "{{color6}}",
-    "cyan": "{{color7}}"
+    "blue": "{{color9}}",
+    "green": "{{color10}}",
+    "magenta": "{{color11}}",
+    "orange": "{{color12}}",
+    "purple": "{{color13}}",
+    "red": "{{color4}}",
+    "yellow": "{{color14}}",
+    "cyan": "{{color15}}"
   }
 }

@@ -1,24 +1,19 @@
 if status is-interactive
+    zoxide init fish | source
 end
-
-# alias n="nvim"
-# alias ls="exa -l --color=always"
-
-# alias kstart="systemctl --user start kanata.service"
-# alias kstop="systemctl --user stop kanata.service"
-# alias krest="systemctl --user restart kanata.service"
-
-# alias e="exa -la"
 
 abbr --add dotdot --regex '^\.\.+$' --function multicd
 
-starship init fish | source
-export EDITOR="/usr/bin/helix"
-export VISUAL="/usr/bin/helix"
-
-source ~/.config/fish/themes/color-fish.fish
+# starship init fish | source
+export EDITOR="/usr/local/bin/hx"
+export VISUAL="/usr/local/bin/hx"
 
 function fish_greeting
 end
 
-zoxide init fish | source
+set fish_cursor_default block
+set fish_cursor_insert block
+set fish_cursor_replace_one block
+set fish_cursor_visual block
+
+fish_config theme choose color-fish

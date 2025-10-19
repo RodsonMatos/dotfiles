@@ -9,10 +9,6 @@ command = "gopls"
 gofumpt = true
 
 
-[language-server.vscode-css-language-server]
-command = "vscode-css-language-server"
-
-
 [language-server.hyprls]
 command = "hyprls"
 
@@ -50,6 +46,12 @@ language-servers = ["rust-analyzer"]
 
 
 [[language]]
+name = "css"
+formatter = { command = "prettier", args = ["--parser", "css"] }
+auto-format = true
+
+
+[[language]]
 name = "toml"
 formatter = { command = "taplo", args = ["format", "-"] }
 auto-format = true
@@ -76,18 +78,6 @@ language-servers = ["vscode-json-language-server"]
 [[language]]
 name = "html"
 formatter = { command = 'prettier', args = ["--parser", "html"] }
-auto-format = true
-
-
-[[language]]
-name = "css"
-formatter = { command = 'prettier', args = ["--parser", "css"] }
-auto-format = true
-
-
-[[language]]
-name = "scss"
-formatter = { command = 'prettier', args = ["--parser", "scss"] }
 auto-format = true
 
 

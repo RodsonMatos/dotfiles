@@ -196,7 +196,7 @@
         "offscreen-css": false,
         "offscreen-css-text": "(inactive)",
         "icon": true,
-        "icon-size": 20,
+        "icon-size": 16,
     },
     "idle_inhibitor": {
         "tooltip": true,
@@ -278,8 +278,8 @@
             "󰤥",
             "󰤨"
         ],
-        "on-click-right": "ghostty --class=com.rotto.impala -e impala"
-        //"on-click-right": "ghostty --class=com.rotto.nmtui -e nmtui"
+        "on-click-right": "kitty --class=com.rotto.impala -e impala"
+        //"on-click-right": "kitty --class=com.rotto.nmtui -e nmtui"
     },
     "network#speed": {
         "interval": 1,
@@ -302,8 +302,8 @@
             "󰤨"
         ],
         //"on-click-right": "$HOME/.config/hypr/scripts/WaybarScripts.sh --nmtui"
-        "on-click-right": "ghostty --class=com.rotto.impala -e impala"
-        //"on-click-right": "ghostty --class=com.rotto.nmtui -e nmtui"
+        "on-click-right": "kitty --class=com.rotto.impala -e impala"
+        //"on-click-right": "kitty --class=com.rotto.nmtui -e nmtui"
     },
     "power-profiles-daemon": {
         "format": "{icon} ",
@@ -380,7 +380,7 @@
         "scroll-step": 5,
     },
     "tray": {
-        "icon-size": 20,
+        "icon-size": 16,
         "spacing": 4,
     },
     "wireplumber": {

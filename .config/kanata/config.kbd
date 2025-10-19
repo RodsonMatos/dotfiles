@@ -217,9 +217,9 @@
   cl (macro S-])
   cr (macro S-\)
   eq =
-  sl (unicode "/")
+  sl IntlRo
   til (unicode "~")
-  vb (unicode |)
+  vb S-IntlBackslash
   / /
   - -
   nbs spc

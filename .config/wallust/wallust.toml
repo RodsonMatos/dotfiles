@@ -76,20 +76,20 @@ swaync.target = '~/.config/swaync/wallust/colors-wallust.css'
 # zathura.template = 'colors-zathura'
 # zathura.target = '~/.config/zathura/zathurarc'
 
-neopywal.template = "colors-wal.vim"
-neopywal.target = "~/.cache/wal/colors-wal.vim"
+# neopywal.template = "colors-wal.vim"
+# neopywal.target = "~/.cache/wal/colors-wal.vim"
 
 wal-theme.template = "pywal-colors"
 wal-theme.target = "~/.cache/wal/colors"
 
-ghostty.template = 'colors-ghostty.conf'
-ghostty.target = '~/.config/ghostty/themes/wallust'
+# ghostty.template = 'colors-ghostty.conf'
+# ghostty.target = '~/.config/ghostty/themes/wallust'
 
-fish.template = 'colors-fish.fish'
-fish.target = '~/.config/fish/themes/color-fish.fish'
+fish.template = 'colors-fish.theme'
+fish.target = '~/.config/fish/themes/color-fish.theme'
 
-kde.template = 'colors-kdeglobals'
-kde.target = '~/.config/kdeglobals'
+# kde.template = 'colors-kdeglobals'
+# kde.target = '~/.config/kdeglobals'
 
-vicinae.template = 'colors-vicinae.json'
-vicinae.target = '~/.config/vicinae/themes/wallust.json'
+vicinae.template = 'colors-vicinae.toml'
+vicinae.target = '~/.local/share/vicinae/themes/wallust.toml'

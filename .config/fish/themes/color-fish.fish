@@ -1,33 +1,33 @@
-# preferred_background: 110C18
+# preferred_background: 0F0A0B
 # based on: 'https://github.com/chriskempson/base16-default-schemes'
 
-set fish_color_normal 306FCD
-set fish_color_autosuggestion 2F5FA8
-set fish_color_cancel BF373F
-set fish_color_command FF0588
-set fish_color_comment D6E4E7
-set fish_color_cwd CA2868
-set fish_color_cwd_root 2588AD
-set fish_color_end 56C1E1
-set fish_color_error FA1871
-set fish_color_escape 31B5E6
-set fish_color_history_current D6E4E7
-set fish_color_host CD1D79
-set fish_color_host_remote 4092A9
-set fish_color_keyword CD1D79
-set fish_color_operator FF0588
-set fish_color_option BF373F
-set fish_color_param CA2868
-set fish_color_quote D6E4E7
-set fish_color_redirection BF373F
-set fish_color_search_match white --background=110C18 --bold
-set fish_color_selection FF4A54 --background=D6E4E7 --bold
-set fish_color_status CD1D79
-set fish_color_user F193BC
-set fish_color_valid_path FF4A54 --underline
-set fish_pager_color_completion 969FA2
-set fish_pager_color_description B3A06D 4092A9
+set fish_color_normal A52046
+set fish_color_autosuggestion 8A1E3D
+set fish_color_cancel 68233C
+set fish_color_command 943563
+set fish_color_comment 8C7B83
+set fish_color_cwd 742B50
+set fish_color_cwd_root 821E2C
+set fish_color_end 591C3B
+set fish_color_error 88315D
+set fish_color_escape 9A2031
+set fish_color_history_current 8C7B83
+set fish_color_host 823159
+set fish_color_host_remote 521C37
+set fish_color_keyword 823159
+set fish_color_operator 943563
+set fish_color_option 68233C
+set fish_color_param 742B50
+set fish_color_quote 8C7B83
+set fish_color_redirection 68233C
+set fish_color_search_match white --background=0F0A0B --bold
+set fish_color_selection 782744 --background=8C7B83 --bold
+set fish_color_status 823159
+set fish_color_user 8D7681
+set fish_color_valid_path 782744 --underline
+set fish_pager_color_completion 62565C
+set fish_pager_color_description B3A06D 521C37
 set fish_pager_color_prefix normal --bold --underline
 set fish_pager_color_progress brwhite --background=cyan --bold
-set fish_pager_color_selected_background --background=D6E4E7
-set fish_pager_color_background E8F2F4
+set fish_pager_color_selected_background --background=8C7B83
+set fish_pager_color_background B4A8AE

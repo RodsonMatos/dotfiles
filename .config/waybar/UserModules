@@ -13,6 +13,8 @@
       "format": " 󱊖 ",
       "tooltip": true,
       "tooltip-format": "Tray Icon",
+      "on-scroll-up": "true",
+      "on-scroll-down": "true",
     },
 
   "group/user_tray": {

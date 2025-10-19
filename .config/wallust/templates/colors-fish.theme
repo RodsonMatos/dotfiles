@@ -1,0 +1,33 @@
+# preferred_background: {{ background | strip }}
+# based on: 'https://github.com/chriskempson/base16-default-schemes'
+
+fish_color_normal {{ color9 | strip }}
+fish_color_autosuggestion {{ color3 | strip }}
+fish_color_cancel {{ color5 | strip }}
+fish_color_command {{ color9 | strip }}
+fish_color_comment {{ color15 | strip }}
+fish_color_cwd {{ color2 | strip }}
+fish_color_cwd_root {{ color4 | strip }}
+fish_color_end {{ color14 | strip }}
+fish_color_error {{ color10 | strip }}
+fish_color_escape {{ color12 | strip }}
+fish_color_history_current {{ color7 | strip }}
+fish_color_host {{ color1 | strip }}
+fish_color_host_remote {{ color6 | strip }}
+fish_color_keyword {{ color1 | strip }}
+fish_color_operator {{ color9 | strip }}
+fish_color_option {{ color5 | strip }}
+fish_color_param {{ color2 | strip }}
+fish_color_quote {{ color15 | strip }}
+fish_color_redirection {{ color5 | strip }}
+fish_color_search_match white --background={{ background | strip }} --bold
+fish_color_selection {{ color13 | strip }} --background={{ color7 | strip }} --bold
+fish_color_status {{ color1 | strip }}
+fish_color_user {{ cursor | strip }}
+fish_color_valid_path {{ color13 | strip }} --underline
+fish_pager_color_completion {{ color8 | strip }}
+fish_pager_color_description B3A06D {{ color6 | strip }}
+fish_pager_color_prefix normal --bold --underline
+fish_pager_color_progress brwhite --background=cyan --bold
+fish_pager_color_selected_background --background={{ color7 | strip }}
+fish_pager_color_background {{ foreground | strip }}

@@ -2,7 +2,7 @@
 # Rofi menu for Quick Edit / View of Settings (SUPER E)
 
 # define your preferred text editor and terminal to use
-editor=nvim
+editor='helix'
 tty='ghostty -e'
 
 configs="$HOME/.config/hypr/configs"
